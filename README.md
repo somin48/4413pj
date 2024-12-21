@@ -9,26 +9,26 @@
 
 ### Steps to Sign Up for MongoDB and Get the Connection String
 
-## 1. **Sign Up for MongoDB Atlas**
+### 1. **Sign Up for MongoDB Atlas**
 MongoDB Atlas is a cloud service that provides MongoDB databases.
 
 - Go to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 - Click **Sign Up** (or **Start Free**).
 
-## 2. **Create a Cluster**
+### 2. **Create a Cluster**
 - After logging in, you'll see a prompt to **Build a Cluster**.
 - Choose the **Free Tier** option (which is free for development purposes).
 - Select a **Cloud Provider** (AWS, Google Cloud, or Azure) and a **Region** closest to you.
 - Click **Create Cluster**. The cluster creation will take a few minutes.
 
-## 3. **Create a Database User**
+### 3. **Create a Database User**
 - Once your cluster is ready, go to the **Database Access** tab.
 - Click **Add New Database User**.
 - Set a **username** and **password** for your MongoDB user.
 - Choose the **Database User Privileges**. For basic use, you can select **Read and write to any database**.
 - Click **Add User**.
 
-## 4. **Get Your Connection String**
+### 4. **Get Your Connection String**
 - Go to the **Clusters** tab and click on **Connect** next to your cluster.
 - Select **Connect Your Application**.
 - Choose the **Node.js** driver version that matches your project (you can select the latest version).
@@ -44,7 +44,7 @@ MongoDB Atlas is a cloud service that provides MongoDB databases.
   - `<cluster-name>`: The name of your MongoDB Atlas cluster.
   - `<dbname>`: The name of the database you want to connect to (you can use any database name, or `test` as a default).
 
-## 5. Save the Connection String for Later
+### 5. Save the Connection String for Later
 
 
 ## Steps
