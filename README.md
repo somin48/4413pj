@@ -7,15 +7,13 @@
 - *(Optional)* Install a code editor like **VS Code**.
 - Sign Up for MongoDB and connect
 
-## Steps to Sign Up for MongoDB and Get the Connection String
+### Steps to Sign Up for MongoDB and Get the Connection String
 
 ## 1. **Sign Up for MongoDB Atlas**
 MongoDB Atlas is a cloud service that provides MongoDB databases.
 
 - Go to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 - Click **Sign Up** (or **Start Free**).
-- Fill in your information or sign up using Google or GitHub.
-- Once signed in, you'll be redirected to the MongoDB Atlas dashboard.
 
 ## 2. **Create a Cluster**
 - After logging in, you'll see a prompt to **Build a Cluster**.
@@ -46,22 +44,7 @@ MongoDB Atlas is a cloud service that provides MongoDB databases.
   - `<cluster-name>`: The name of your MongoDB Atlas cluster.
   - `<dbname>`: The name of the database you want to connect to (you can use any database name, or `test` as a default).
 
-## 5. **Use the Connection String in Your Application**
-- Copy the provided connection string.
-- Paste it into your `.env` file in the backend folder, like this:
-
-  ```
-  MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/<dbname>?retryWrites=true&w=majority
-  ```
-
-- Replace the placeholders with your actual values.
-
-## 6. **Test the Connection**
-- Start your backend server using `npm run server` (or the appropriate command for your project).
-- Ensure that MongoDB is properly connected by checking the server logs for any connection errors.
-
-Now you have MongoDB Atlas set up and connected to your project! Let me know if you need further help.
-```
+## 5. Save the Connection String for Later
 
 
 ## Steps
