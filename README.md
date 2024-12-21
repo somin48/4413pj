@@ -61,9 +61,10 @@ MongoDB Atlas is a cloud service that provides MongoDB databases.
 ### 3. **Find API Keys and Cloudinary Name**
 - On the **Dashboard**, click on the **Account Settings** icon (usually located in the top-right corner).
 - Under the **API Key** section, you will find the following:
-  - **Cloudinary Name**: This is the **cloud name** (e.g., `your-cloud-name`).
+  - **Cloudinary Name**: This is the **cloud name** shown next to `API Keys` (e.g., Cloud name: cloudname). This is not a key name.
   - **API Key**: This is the **CLOUDINARY_API_KEY**.
   - **API Secret**: This is the **CLOUDINARY_SECRET_KEY**.
+
 
 You will see something like this:
 ```
@@ -107,7 +108,7 @@ Replace `your-api-key`, `your-api-secret`, and `your-cloud-name` with the actual
   ADMIN_EMAIL=admin@admin.com
   ADMIN_PW=pwadminpw
   ```
-  Replace the placeholders with your actual values, such as the MongoDB URI, Cloudinary credentials, JWT secret, and admin credentials.
+  Replace the placeholders with your actual values, such as the MongoDB URI, Cloudinary credentials, JWT secret, and admin credentials. **JWT_SECRET** can be any string that you select.
 - Start the backend server:
   ```
   npm run server
