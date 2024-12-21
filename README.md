@@ -153,27 +153,6 @@ Replace `your-api-key`, `your-api-secret`, and `your-cloud-name` with the actual
   ```
 - Open the provided local URL (`http://localhost:5174`) in a browser. Make sure your port is not in use.
 
-### 5. Testing the Application
-- Access the frontend and admin panel URLs in the browser.
-- Use the credentials provided for admin login or create new users via the frontend.
-- Test various features like:
-  - Product listing  
-  - Cart  
-  - Checkout  
-  - Admin management  
-
-### 6. Common Issues and Troubleshooting
-
-#### Error: Port Already in Use  
-- Stop any process running on the same port or use a different port.
-
-#### Database Connection Issues  
-- Ensure MongoDB is running and the URI in `.env` is correct.
-
-#### Environment Variables Not Working  
-- Double-check the `.env` file and restart the server.
-
-
 
 
 
