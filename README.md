@@ -54,7 +54,7 @@
   ```
   npm run dev
   ```
-- Open the provided local URL (e.g., `http://localhost:5173`) in a browser.
+- Open the provided local URL (`http://localhost:5173`) in a browser. Make sure your port is not in use.
 
 ### 4. Set Up the Admin Panel (If Applicable)
 - Navigate to the `admin` folder:
@@ -73,7 +73,7 @@
   ```
   npm run dev
   ```
-- Open the provided local URL (e.g., `http://localhost:5174`) in a browser.
+- Open the provided local URL (`http://localhost:5174`) in a browser. Make sure your port is not in use.
 
 ### 5. Testing the Application
 - Access the frontend and admin panel URLs in the browser.
