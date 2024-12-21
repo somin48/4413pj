@@ -24,10 +24,13 @@ const Login = ({ setToken }) => {
             }
 
         } catch (error) {
-
-            console.log(error);
-            toast.error(error.message)
-
+            console.error("Error during login:", error);
+            if (error.response) {
+                // Log detailed error response
+                console.error("Response data:", error.response.data);
+                console.error("Response status:", error.response.status);
+            }
+            toast.error('Failed to login Admin');
         }
 
     }
