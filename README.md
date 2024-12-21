@@ -72,33 +72,18 @@ API Key: your-api-key
 API Secret: your-api-secret
 ```
 
-### 4. **Set Up the `.env` File**
-After obtaining these credentials, create or update the `.env` file in your project directory with the following values:
-
+### 4. **Save informations to Set Up the `.env` File Later**
+Save the following values:
 ```
 CLOUDINARY_API_KEY=your-api-key
 CLOUDINARY_SECRET_KEY=your-api-secret
 CLOUDINARY_NAME=your-cloud-name
 ```
-
 Replace `your-api-key`, `your-api-secret`, and `your-cloud-name` with the actual values from your Cloudinary account.
 
-### 5. **Test the Integration**
-- After setting up the `.env` file, start your project by running:
-  ```
-  npm run server
-  ```
-- Ensure that your application is properly configured to use Cloudinary's services, such as image uploads.
-
-### Summary of Steps:
-1. **Sign up** for Cloudinary and log in.
-2. **Find the API Key**, API Secret, and Cloud Name in the Cloudinary dashboard under Account Settings.
-3. **Update the `.env` file** with the Cloudinary credentials.
-4. **Run the project** to test the integration.
 
 
-
-## Steps
+## Steps to Download and Set Up Environment to Test Locally
 
 ### 1. Extract the ZIP File
 - Unzip the project folder into a directory of your choice.
