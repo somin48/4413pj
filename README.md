@@ -189,10 +189,11 @@ Replace `your-api-key`, `your-api-secret`, and `your-cloud-name` with the actual
 ### 2. Network error -> Refresh the page
 ### 3. Admin credentials
 - Use admin credentials to login as admin on admin page
-  ```
+
   admin email :
   ```
   admin@admin.com
+  ```
   admiinn password :
   ```
   pwadminpw
