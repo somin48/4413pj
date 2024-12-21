@@ -1,4 +1,4 @@
-```markdown
+
 # Setup Instructions to Set Up and Test the Project
 
 ## Prerequisites
