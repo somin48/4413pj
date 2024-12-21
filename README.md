@@ -105,16 +105,18 @@
 ### 1. Links to Frontend & Admin
 ```
 https://4413pj-front.vercel.app/
-
+```
 ```
 https://4413pj-admin.vercel.app/
-
+```
 ### 2. Network error -> Refresh the page
 ### 3. Admin credentials
 - Use admin credentials to login as admin on admin page
+  ```
   admin email :
   ```
   admin@admin.com
   admiinn password :
   ```
   pwadminpw
+  ```
