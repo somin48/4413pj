@@ -1,34 +1,41 @@
-import express from 'express'
-import cors from 'cors'
-import 'dotenv/config'
-import connectToDB from './config/mongodb.js'
-import connectToCL from './config/cloudinary.js'
-import userRouter from './routes/userRoute.js'
-import productRouter from './routes/productRoute.js'
-import cartRouter from './routes/cartRoute.js'
-import orderRouter from './routes/orderRoute.js'
+import express from 'express';
+import cors from 'cors';
+import 'dotenv/config';
+import connectToDB from './config/mongodb.js';
+import connectToCL from './config/cloudinary.js';
+import userRouter from './routes/userRoute.js';
+import productRouter from './routes/productRoute.js';
+import cartRouter from './routes/cartRoute.js';
+import orderRouter from './routes/orderRoute.js';
 
 // App config
-const app = express()
-const port = process.env.PORT || 4000
-connectToDB()
-connectToCL()
+const app = express();
+const port = process.env.PORT || 4000;
 
-//middleware
-app.use(express.json())
-app.use(cors())
+// Connect to database and cloudinary
+connectToDB();
+connectToCL();
 
+// Middleware
+app.use(express.json());
 
-//api enpoints
-app.use('/api/user', userRouter)
-app.use('/api/product', productRouter)
-app.use('/api/cart', cartRouter)
-app.use('/api/order', orderRouter)
+// Configure CORS
+const allowedOrigins = ['http://localhost:5173', 'https://your-frontend-deployed-url.com']; // Replace with your actual frontend URLs
+app.use(cors({
+    origin: allowedOrigins,
+    credentials: true, // If using cookies or HTTP authentication
+}));
 
+// API endpoints
+app.use('/api/user', userRouter);
+app.use('/api/product', productRouter);
+app.use('/api/cart', cartRouter);
+app.use('/api/order', orderRouter);
+
+// Health check endpoint
 app.get('/', (req, res) => {
-    res.send("This will appear on Postman res body")
-})
+    res.send("My backend is running");
+});
 
-
-
-app.listen(port, () => console.log('Server started on PORT: ' + port))
+// Start server
+app.listen(port, () => console.log('Server started on PORT: ' + port));
