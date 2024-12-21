@@ -17,6 +17,8 @@ const ShopContextProvider = (props) => {
 
     //connect with backend
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    console.log('Backend URL:', backendUrl);
+
 
     const [search, setSearch] = useState('');
     const [showSearch, setShowSearch] = useState(false); //show or hide searchbar

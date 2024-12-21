@@ -20,7 +20,7 @@ connectToCL();
 app.use(express.json());
 
 // Configure CORS
-const allowedOrigins = ['http://localhost:5173', 'https://your-frontend-deployed-url.com']; // Replace with your actual frontend URLs
+const allowedOrigins = ['http://localhost:5173', 'https://4413pj-front.vercel.app]; // Replace with your actual frontend URLs
 app.use(cors({
     origin: allowedOrigins,
     credentials: true, // If using cookies or HTTP authentication
