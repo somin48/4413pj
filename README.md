@@ -7,7 +7,6 @@
 - *(Optional)* Install a code editor like **VS Code**.
 - Sign Up for MongoDB and connect
 
-  ```markdown
 ## Steps to Sign Up for MongoDB and Get the Connection String
 
 ## 1. **Sign Up for MongoDB Atlas**
