@@ -35,7 +35,7 @@
   ```
   npm run server
   ```
-- Ensure the backend is running and note the URL (e.g., `http://localhost:4000`).
+- Ensure the backend is running and note the URL (`http://localhost:4000`).
 
 ### 3. Set Up the Frontend
 - Open another terminal and navigate to the `frontend` folder:
