@@ -83,12 +83,9 @@ const registerUser = async (req, res) => {
 const adminLogin = async (req, res) => {
     try {
         const { email, password } = req.body;
-
-        // Check if email and password match the admin credentials
         if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PW) {
-            // Generate token using the admin's email (or use a predefined admin role)
-            const token = jwt.sign({ email: email, role: 'admin' }, process.env.JWT_SECRET, { expiresIn: '1h' });
-
+            // Generate token with a proper payload
+            const token = jwt.sign({ email: process.env.ADMIN_EMAIL }, process.env.JWT_SECRET, { expiresIn: '1h' });
             res.json({
                 success: true,
                 token
@@ -100,13 +97,13 @@ const adminLogin = async (req, res) => {
             });
         }
     } catch (error) {
-        console.log(error);
         res.json({
             success: false,
-            message: 'Server error occurred during admin login'
+            message: error.message
         });
     }
 };
+
 
 
 export { loginUser, registerUser, adminLogin }
