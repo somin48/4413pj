@@ -96,5 +96,3 @@
 - Double-check the `.env` file and restart the server.
 ```
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/41579693/179d0bb6-8586-4557-a435-9b7cec5a2a9c/setup_instructions.txt
